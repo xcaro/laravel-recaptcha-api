@@ -21,7 +21,7 @@ class RecaptchaServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register services.
+     * Register reCaptcha services.
      *
      * @return void
      */
@@ -29,7 +29,7 @@ class RecaptchaServiceProvider extends ServiceProvider
     {
         $this->handleConfig();
         $this->bindRecaptcha();
-        
+
         $this->app->singleton(Recaptcha::class);
         $this->app->alias(Recaptcha::class, 'recaptcha');
     }
@@ -68,6 +68,10 @@ class RecaptchaServiceProvider extends ServiceProvider
         }, app('recaptcha.rule')->message());
     }
 
+    /**
+     * get the services provided by the provider
+     * @return array
+     */
     public function provides()
     {
         return ['recaptcha'];

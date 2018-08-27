@@ -5,17 +5,17 @@ namespace xcaro\Recaptcha;
 
 class Recaptcha
 {
-	protected $service;
-
-	protected $config = [];
-	
 
 	function __construct()
 	{
-		// $this->service = $service;
-		// $this->config = $config;
+		// 
 	}
 
+	/**
+	 * Render the reCaptcha view
+	 * @param  array  $config [custom reCaptcha]
+	 * @return view
+	 */
 	public function render($config = [])
 	{
 		$data = [
@@ -28,6 +28,10 @@ class Recaptcha
 		return app('view')->make($view, $data);
 	}
 
+	/**
+	 * Get the view path
+	 * @return [string] [view name]
+	 */
 	protected function getView(): string
 	{
 		$view = 'recaptcha::' . app('config')->get('recaptcha.view');
