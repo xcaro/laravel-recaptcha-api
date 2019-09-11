@@ -8,7 +8,7 @@ class Recaptcha extends Facade
 {
 
 	protected static function getFacadeAccessor()
-    {
-        return 'recaptcha';
-    }
+	{
+		return 'recaptcha';
+	}
 }

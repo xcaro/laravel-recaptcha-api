@@ -1,11 +1,11 @@
 {
-    "name": "xcaro/google-recaptcha-api",
+    "name": "xcaro/laravel-recaptcha-api",
     "description": "reCaptcha for Laravel 5",
-    "keywords": ["laravel", "laravel5", "recaptcha", "captcha"],
+    "keywords": ["laravel", "recaptcha"],
     "license": "MIT",
     "authors": [
         {
-            "name": "xcaro",
+            "name": "Nhan Vo",
             "email": "tinhnhanvh@gmail.com"
         }
     ],
@@ -25,9 +25,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.2-dev"
-        },
         "laravel": {
             "providers": [
                 "xcaro\\Recaptcha\\RecaptchaServiceProvider"

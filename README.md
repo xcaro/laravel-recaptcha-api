@@ -5,7 +5,7 @@ Recaptcha for Laravel 5
 ## Installation
 Require this package with composer. It is recommended to only require the package for development.
 ```
-composer require xcaro/google-recaptcha-api
+composer require xcaro/laravel-recaptcha-api
 ```
 ### Laravel 5.5+:
 Add the ServiceProvider to the providers array in config/app.php:
